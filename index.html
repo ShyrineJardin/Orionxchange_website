@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" integrity="sha512-XcIsjKMcuVe0Ucj/xgIXQnytNwBttJbNjltBV18IOnru2lDPe9KRRyvCXw6Y5H415vbBLRm8+q6fmLUU7DfO6Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <link href="./output.css" rel="stylesheet">
+  <title>OrionXchange Solutions Inc.</title>
+</head>
+
+
+<body>
+  <nav class="fixed top-0 left-0 w-full bg-white shadow-lg z-50 py-4">
+    <div class="container mx-auto px-5 lg:px-20">
+      <div class="flex items-center justify-between">
+        <!-- Logo -->
+        <div>
+          <h1 class="font-goldman text-2xl">OrionXchange</h1>
+        </div>
+
+        <!-- Navigation Links (visible on desktop) -->
+        <div class="w-2/4 md:flex justify-center hidden">
+          <ul class="flex items-center gap-10">
+            <li><a href="#home" class="nav-link active">HOME</a></li>
+            <li><a href="#about" class="nav-link">ABOUT US</a></li>
+            <li><a href="#services" class="nav-link">SERVICES</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Button -->
+        <div class="w-1/4 md:flex justify-end hidden">
+          <button class="flex items-center">
+            CONTACT US <i class="ri-arrow-right-up-line ml-2"></i>
+          </button>
+        </div>
+
+        <!-- Hamburger Menu (visible on mobile) -->
+        <div class="text-3xl cursor-pointer md:hidden">
+          <i class="ri-menu-4-line" id="hamburger"></i>
+        </div>
+      </div>
+
+      <!-- Mobile Menu (hidden by default) -->
+      <div class="hidden flex-col md:hidden mt-4" id="mobile-menu">
+        <ul class="flex flex-col items-center gap-4 mb-4">
+          <li><a href="#home" class="nav-link active">HOME</a></li>
+          <li><a href="#about" class="nav-link">ABOUT US</a></li>
+          <li><a href="#services" class="nav-link">SERVICES</a></li>
+        </ul>
+        <div class="flex justify-center">
+          <button class="flex items-center">
+            CONTACT US <i class="ri-arrow-right-up-line ml-2"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <script src="main.js"></script>
+</body>
+</html>
