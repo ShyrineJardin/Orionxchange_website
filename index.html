@@ -12,12 +12,12 @@
 
 
 <body>
-  <nav class="fixed top-0 left-0 w-full bg-white shadow-lg z-50 py-4">
+  <nav class="fixed top-0 left-0 w-full bg-white z-50 py-4">
     <div class="container mx-auto px-5 lg:px-20">
       <div class="flex items-center justify-between">
         <!-- Logo -->
         <div>
-          <h1 class="font-goldman text-2xl">OrionXchange</h1>
+          <h2>OrionXchange</h2>
         </div>
 
         <!-- Navigation Links (visible on desktop) -->
@@ -56,7 +56,72 @@
         </div>
       </div>
     </div>
+    <hr class="mt-2.5">
   </nav>
+
+  <!--Hero Section-->
+  <div class="container mx-auto px-5 lg:px-20 mt-25">
+    <!-- Main Heading - Centered on mobile, same on desktop -->
+    <div class="text-center relative mb-3">
+      <h1 class="relative z-10 text-4xl md:text-5xl lg:text-6xl">Innovate. Transform. Elevate</h1>
+    </div>
+
+    <!-- Tagline - Hidden on mobile, visible on desktop -->
+    <div class="flex justify-end mt-3">
+      <p class="w-full md:w-1/4 text-center md:text-right hidden md:block">
+        We empower businesses with cutting-edge technology solutions, driving efficiency, scalability, and digital transformation.
+      </p>
+      <!-- Mobile version of the tagline -->
+      <p class="w-full text-center md:hidden px-5">
+        We empower businesses with cutting-edge technology solutions, driving efficiency, scalability, and digital transformation.
+      </p>
+    </div>
+    
+    <!-- Center Image - Adjusted positioning for mobile -->
+    <div class="flex justify-center items-center relative md:py-0">
+      <img src="assets/innovate.png" alt="Innovation Illustration" class="relative md:absolute z-10 w-3/4 md:w-auto md:-top-60 lg:-top-50">
+    </div>
+
+    <!-- Desktop CTA section -->
+    <div class="hidden md:block">
+      <div class="flex flex-col mt-20">
+        <h2 class="w-1/4 mb-3 text-2xl font-medium">Innovate with confidence. Grow without limits.</h2>
+        <div>
+          <button>Learn More</button>
+        </div>
+      </div>
+    </div>
+   
+    <!-- Mobile CTA section -->
+    <div class="md:hidden text-center my-3">
+      <h2 class="mb-4 text-xl font-medium">Innovate with confidence. Grow without limits.</h2>
+      <div>
+        <button>Learn More</button>
+      </div>
+    </div>
+
+    <!-- Social Icons - Hidden on mobile, visible on desktop -->
+    <div class="m-3 md:flex justify-end hidden">
+      <div class="flex flex-col">
+        <i class="ri-facebook-circle-line text-2xl mb-2"></i>
+        <i class="ri-instagram-line text-2xl mb-2"></i>
+        <i class="ri-twitter-x-line text-2xl"></i>
+      </div>
+    </div>
+
+    <!-- Mobile Social Icons - Horizontal layout -->
+    <div class="flex justify-center gap-6 my-3 md:hidden">
+      <i class="ri-facebook-circle-line text-3xl"></i>
+      <i class="ri-instagram-line text-3xl"></i>
+      <i class="ri-twitter-x-line text-3xl"></i>
+    </div>
+  </div>
+
+  <!--Slider-->
+  <div>
+
+  </div>
+
 
   <script src="main.js"></script>
 </body>

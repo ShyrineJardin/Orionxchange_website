@@ -28,6 +28,14 @@ body{
     @apply font-poppins;
 }
 
+h1{
+  @apply font-goldman font-medium md:text-6xl text-5xl;
+}
+
+h2{
+  @apply font-goldman text-2xl;
+}
+
 .nav-link{
     @apply font-poppins cursor-pointer;
 }
