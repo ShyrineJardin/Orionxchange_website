@@ -1,11 +1,14 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" integrity="sha512-XcIsjKMcuVe0Ucj/xgIXQnytNwBttJbNjltBV18IOnru2lDPe9KRRyvCXw6Y5H415vbBLRm8+q6fmLUU7DfO6Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+    integrity="sha512-XcIsjKMcuVe0Ucj/xgIXQnytNwBttJbNjltBV18IOnru2lDPe9KRRyvCXw6Y5H415vbBLRm8+q6fmLUU7DfO6Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <link href="./output.css" rel="stylesheet">
   <title>OrionXchange Solutions Inc.</title>
 </head>
@@ -17,7 +20,7 @@
       <div class="flex items-center justify-between">
         <!-- Logo -->
         <div>
-          <h2>OrionXchange</h2>
+          <a href="#home"><h4 class="cursor-pointer">OrionXchange</h4></a>
         </div>
 
         <!-- Navigation Links (visible on desktop) -->
@@ -31,9 +34,10 @@
 
         <!-- Contact Button -->
         <div class="w-1/4 md:flex justify-end hidden">
-          <button class="flex items-center">
+          <a href="contact.html" class="button flex items-center">
             CONTACT US <i class="ri-arrow-right-up-line ml-2"></i>
-          </button>
+          </a>
+          
         </div>
 
         <!-- Hamburger Menu (visible on mobile) -->
@@ -50,9 +54,9 @@
           <li><a href="#services" class="nav-link">SERVICES</a></li>
         </ul>
         <div class="flex justify-center">
-          <button class="flex items-center">
+          <a href="contact.html" class="button flex items-center">
             CONTACT US <i class="ri-arrow-right-up-line ml-2"></i>
-          </button>
+          </a>
         </div>
       </div>
     </div>
@@ -60,7 +64,7 @@
   </nav>
 
   <!--Hero Section-->
-  <div class="container mx-auto px-5 lg:px-20 mt-25">
+  <section id="home" class="container mx-auto px-5 lg:px-20 mt-25">
     <!-- Main Heading - Centered on mobile, same on desktop -->
     <div class="text-center relative mb-3">
       <h1 class="relative z-10 text-4xl md:text-5xl lg:text-6xl">Innovate. Transform. Elevate</h1>
@@ -69,43 +73,50 @@
     <!-- Tagline - Hidden on mobile, visible on desktop -->
     <div class="flex justify-end mt-3">
       <p class="w-full md:w-1/4 text-center md:text-right hidden md:block">
-        We empower businesses with cutting-edge technology solutions, driving efficiency, scalability, and digital transformation.
+        We empower businesses with cutting-edge technology solutions, driving efficiency, scalability, and digital
+        transformation.
       </p>
       <!-- Mobile version of the tagline -->
       <p class="w-full text-center md:hidden px-5">
-        We empower businesses with cutting-edge technology solutions, driving efficiency, scalability, and digital transformation.
+        We empower businesses with cutting-edge technology solutions, driving efficiency, scalability, and digital
+        transformation.
       </p>
     </div>
-    
+
     <!-- Center Image - Adjusted positioning for mobile -->
     <div class="flex justify-center items-center relative md:py-0">
-      <img src="assets/innovate.png" alt="Innovation Illustration" class="relative md:absolute z-10 w-3/4 md:w-auto md:-top-60 lg:-top-50">
+      <img src="assets/innovate.png" alt="Innovation Illustration"
+        class="relative md:absolute z-10 w-3/4 md:w-auto md:-top-60 lg:-top-50">
     </div>
 
     <!-- Desktop CTA section -->
     <div class="hidden md:block">
       <div class="flex flex-col mt-20">
-        <h2 class="w-1/4 mb-3 text-2xl font-medium">Innovate with confidence. Grow without limits.</h2>
+        <h4 class="w-1/4 mb-3 text-2xl font-medium">Innovate with confidence. Grow without limits.</h4>
         <div>
-          <button>Learn More</button>
+          <a href="" class="button">
+            Learn More
+           </a>
         </div>
       </div>
     </div>
-   
+
     <!-- Mobile CTA section -->
     <div class="md:hidden text-center my-3">
-      <h2 class="mb-4 text-xl font-medium">Innovate with confidence. Grow without limits.</h2>
+      <h4 class="mb-4 text-xl font-medium">Innovate with confidence. Grow without limits.</h4>
       <div>
-        <button>Learn More</button>
+        <a href="" class="button">
+         Learn More
+        </a>
       </div>
     </div>
 
     <!-- Social Icons - Hidden on mobile, visible on desktop -->
     <div class="m-3 md:flex justify-end hidden">
       <div class="flex flex-col">
-        <i class="ri-facebook-circle-line text-2xl mb-2"></i>
-        <i class="ri-instagram-line text-2xl mb-2"></i>
-        <i class="ri-twitter-x-line text-2xl"></i>
+        <i class="ri-facebook-circle-line text-3xl mb-2 hover:scale-110"></i>
+        <i class="ri-instagram-line text-3xl mb-2 hover:scale-110"></i>
+        <i class="ri-twitter-x-line text-3xl hover:scale-110"></i>
       </div>
     </div>
 
@@ -115,9 +126,207 @@
       <i class="ri-instagram-line text-3xl"></i>
       <i class="ri-twitter-x-line text-3xl"></i>
     </div>
+  </section>
+
+  <!-- Scroll Section -->
+  <div class="mt-1 lg:mt-10">
+    <div class="scroll-container">
+      <div class="scroll-content">
+        <div class="card">
+          <span class="text-2xl"><i class="ri-rocket-line"></i></span>
+          <h3>Innovative IT Solutions</h3>
+          <p>Empowering businesses with cutting-edge technology and digital transformation.</p>
+        </div>
+
+        <div class="card">
+          <span class="text-2xl"><i class="ri-cloud-line"></i></span>
+          <h3>Cloud Computing</h3>
+          <p>Scalable, secure, and efficient cloud solutions tailored for your business growth.</p>
+        </div>
+
+        <div class="card">
+          <span class="text-2xl"><i class="ri-git-repository-private-line"></i></span>
+          <h3>Enterprise Security</h3>
+          <p>Advanced cybersecurity solutions to protect your data and infrastructure.</p>
+        </div>
+
+        <div class="card">
+          <span class="text-2xl"><i class="ri-robot-2-line"></i></span>
+          <h3>AI & Automation</h3>
+          <p>Leveraging artificial intelligence to streamline workflows and enhance productivity.</p>
+        </div>
+
+        <div class="card">
+          <span class="text-2xl"><i class="ri-team-line"></i></span>
+          <h3>IT Consulting</h3>
+          <p>Expert guidance to optimize your IT strategy and infrastructure.</p>
+        </div>
+
+        <!-- Duplicate content for infinite scroll effect -->
+        <div class="card">
+          <span class="text-2xl"><i class="ri-rocket-line"></i></span>
+          <h3>Innovative IT Solutions</h3>
+          <p>Empowering businesses with cutting-edge technology and digital transformation.</p>
+        </div>
+
+        <div class="card">
+          <span class="text-2xl"><i class="ri-cloud-line"></i></span>
+          <h3>Cloud Computing</h3>
+          <p>Scalable, secure, and efficient cloud solutions tailored for your business growth.</p>
+        </div>
+
+        <div class="card">
+          <span class="text-2xl"><i class="ri-git-repository-private-line"></i></span>
+          <h3>Enterprise Security</h3>
+          <p>Advanced cybersecurity solutions to protect your data and infrastructure.</p>
+        </div>
+
+        <div class="card">
+          <span class="text-2xl"><i class="ri-robot-2-line"></i></span>
+          <h3>AI & Automation</h3>
+          <p>Leveraging artificial intelligence to streamline workflows and enhance productivity.</p>
+        </div>
+
+        <div class="card">
+          <span class="text-2xl"><i class="ri-team-line"></i></span>
+          <h3>IT Consulting</h3>
+          <p>Expert guidance to optimize your IT strategy and infrastructure.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--About-->
+  <section id="about" class="mt-20 container flex justify-center items-center text-center md:text-start py-16">
+    <div class="flex flex-col md:flex-row gap-8 items-center justify-center">
+      <div class="md:w-1/2">
+        <h1 class="mb-5">About Us</h1>
+        <p class="mb-5">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi odit at perferendis cum deleniti sunt ipsam
+          dolorem, mollitia numquam in optio, molestiae, omnis magni. Totam officiis quas incidunt culpa enim? Lorem
+          ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+
+        <a href="" class="underline font-bold">Read More <i class="ri-arrow-right-long-line"></i></a>
+      </div>
+
+      <div class="md:w-1/2">
+        <img src="https://cdn.pixabay.com/photo/2015/01/09/11/08/startup-594090_1280.jpg" alt=""
+          class="rounded-lg shadow-lg">
+      </div>
+    </div>
+  </section>
+
+  <!--services-->
+  <section id="services" class="mt-20 bg-[#f3f3f3]">
+    <div class="container p-6">
+      <div>
+        <h1 class="text-center mb-5">Our Services</h1>
+        <p class="text-center mb-5">Future-proof your business with cutting-edge IT solutions, ensuring seamless scalability, security, and digital transformation</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div class="service_card">
+          <span><i class="ri-wallet-2-line"></i></span>
+          <h3>FinTech</h3>
+          <p>Easing payment processes, reducing fraud, saving users money, promoting financial planning, and ultimately moving the banking industry forward.</p>
+        </div>
+
+        <div class="service_card">
+          <span><i class="ri-time-line"></i></span>
+          <h3>Mobility</h3>
+          <p>Moving something, or someone, from point A to point B with the most efficient way possible. Leveraging on location-based technologies, mobile devices, logistics, and crowdsourcing.</p>
+        </div>
+
+        <div class="service_card">
+          <span><i class="ri-shopping-bag-2-line"></i></span>
+          <h3>Commerce</h3>
+          <p>Solving the biggest problems top brands and retailers face today by changing consumer behaviour, extending market reach, and combining entertainment and profitability.</p>
+        </div>
+
+        <div class="service_card">
+          <span><i class="ri-wifi-line"></i></span>
+          <h3>Internet of Things</h3>
+          <p>We explore everything from delivery drones and 3d-printing to fan-speed controlling bots. We love to explore the intersection between hardware and software.</p>
+        </div>
+
+        <div class="service_card">
+          <span><i class="ri-dna-line"></i></span>
+          <h3>Health and Wellness</h3>
+          <p>Solving the biggest problems top brands and retailers face today by changing consumer behaviour, extending market reach, and combining entertainment and profitability.</p>
+        </div>
+
+        <div class="service_card">
+          <span><i class="ri-pencil-ruler-2-line"></i></span>
+          <h3>Education</h3>
+          <p>Finding ways to improve the reach and quality of education in society through the use of technology often runs through our innovation sessions.</p>
+        </div>
+      </div>
+  </section>
+
+  <!-- Scroll Words -->
+  <div class="scroll-container border-solid border-t-2 border-b-2">
+    <div class="scroll-content">
+      <h4>INNOVATION &nbsp;&nbsp;&nbsp;&nbsp; • &nbsp;&nbsp;&nbsp;&nbsp; FUTURE &nbsp;&nbsp;&nbsp;&nbsp; • &nbsp;&nbsp;&nbsp;&nbsp; DISRUPTIVE &nbsp;&nbsp;&nbsp;&nbsp; •  &nbsp;&nbsp;&nbsp;&nbsp;</h4>
+      <h4>PIONEERING &nbsp;&nbsp;&nbsp;&nbsp; • &nbsp;&nbsp;&nbsp;&nbsp; CUTTING-EDGE &nbsp;&nbsp;&nbsp;&nbsp; • &nbsp;&nbsp;&nbsp;&nbsp; NEXT-GEN &nbsp;&nbsp;&nbsp;&nbsp; •  &nbsp;&nbsp;&nbsp;&nbsp;</h4>
+      <h4>AI-POWERED &nbsp;&nbsp;&nbsp;&nbsp; • &nbsp;&nbsp;&nbsp;&nbsp; SMART SOLUTIONS &nbsp;&nbsp;&nbsp;&nbsp; • &nbsp;&nbsp;&nbsp;&nbsp; VISIONARY &nbsp;&nbsp;&nbsp;&nbsp; •  &nbsp;&nbsp;&nbsp;&nbsp;</h4>
+      <h4>BEYOND LIMITS &nbsp;&nbsp;&nbsp;&nbsp; • &nbsp;&nbsp;&nbsp;&nbsp; INNOVATION &nbsp;&nbsp;&nbsp;&nbsp; • &nbsp;&nbsp;&nbsp;&nbsp; FUTURE &nbsp;&nbsp;&nbsp;&nbsp; •  &nbsp;&nbsp;&nbsp;&nbsp;</h4>
+      <h4>DISRUPTIVE &nbsp;&nbsp;&nbsp;&nbsp; • &nbsp;&nbsp;&nbsp;&nbsp; PIONEERING &nbsp;&nbsp;&nbsp;&nbsp; • &nbsp;&nbsp;&nbsp;&nbsp; CUTTING-EDGE &nbsp;&nbsp;&nbsp;&nbsp; •  &nbsp;&nbsp;&nbsp;&nbsp;</h4>
+      <h4>NEXT-GEN &nbsp;&nbsp;&nbsp;&nbsp; • &nbsp;&nbsp;&nbsp;&nbsp; AI-POWERED &nbsp;&nbsp;&nbsp;&nbsp; • &nbsp;&nbsp;&nbsp;&nbsp; SMART SOLUTIONS &nbsp;&nbsp;&nbsp;&nbsp; •  &nbsp;&nbsp;&nbsp;&nbsp;</h4>
+    </div>
   </div>
 
 
+  <!--Contact-->
+  <section class="container mt-20">
+      <div class="flex flex-col items-center justify-center text-center">
+        <h1 class="mb-5">Ready to start?</h1>
+        <p class="mb-5">Contact us for solutions to grow your platform. Select and connect the products you need to succeed.</p>
+        <a href="contact.html" class="button">CONTACT US <i class="ri-arrow-right-up-line"></i></a>
+        <img src="assets/computer.png" alt="">
+      </div>
+
+  </section>
+
+  <!--Footer-->
+  <footer class="bg-[#f3f3f3] pt-10">
+    <div class="grid sm:grid-cols-1 md:grid-cols-3 gap-5">
+      <div class="flex flex-col items-center justify-center">
+        <h4>OrionXchange</h4>
+        <p class="text-center">Innovate. Transform. Elevate</p>
+      </div>
+
+      <div class="flex flex-col gap-5 justify-center items-center">
+        <p class="font-bold">Company</p>
+        <a href="">About us</a>
+        <a href="">Services</a>
+        <a href="">Blog</a>
+        <a href="">Documentations</a>
+      </div>
+
+      <div class="flex flex-col gap-5">
+        <p class="font-bold">Headquarters</p>
+        <p><i class="ri-map-pin-line"></i> room 122, Clark Welcome Center Office Suites,
+          Berthaphil VIII Compound,
+          SCTEX Rd, Clark Freeport Zone,
+          Angeles City, Pampanga, 2009, Philippines</p>
+
+            <div class="flex justify-center gap-6 my-3">
+              <i class="ri-facebook-circle-line text-3xl mb-2 hover:scale-110"></i>
+              <i class="ri-instagram-line text-3xl mb-2 hover:scale-110"></i>
+              <i class="ri-twitter-x-line text-3xl hover:scale-110"></i>
+            </div>        
+      </div>
+    </div>
+
+    <hr class="mt-10">
+    <div class="flex justify-center items-center text-center">
+      <p class="pt-3">© 2025 OrionXchange Solutions Inc. All rights reserved.</p>
+    </div>
+
+  </footer>
+
   <script src="main.js"></script>
 </body>
+
 </html>

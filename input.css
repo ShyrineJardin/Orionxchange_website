@@ -25,6 +25,46 @@
 }
 
 
+@layer utilities {
+  
+  @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-25%);
+    }
+  }
+}
+
+.scroll-container {
+  @apply w-[100%] overflow-hidden relative bg-white pt-[20px] xl:pt-[25px] pb-[20px];
+}
+
+.scroll-content {
+  display: flex;
+  width: max-content;
+  animation: scroll 20s linear infinite;
+}
+
+.card {
+  background: #f3f3f3;
+  padding: 16px;
+  border-radius: 12px;
+  max-width: 400px;
+  text-align: left;
+  margin: 0 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+}
+
+.card span {
+  @apply block mb-[8px]; 
+}
+
+.card h3 {
+  @apply mb-[8px]; 
+}
 
 body{
     @apply font-poppins;
@@ -35,6 +75,14 @@ h1{
 }
 
 h2{
+  @apply font-goldman font-medium text-4xl mb-3;
+}
+
+h3{
+  @apply font-bold text-lg;
+}
+
+h4{
   @apply font-goldman text-2xl;
 }
 
@@ -46,10 +94,42 @@ h2{
     @apply font-medium underline;
 }
 
-button{
+.button{
     @apply font-poppins bg-black text-white px-5 py-2 rounded-2xl transition duration-300 border-black border-2;
 }
 
-button:hover{
+.button:hover{
     @apply bg-white text-black border-solid;
+}
+
+button{
+  @apply w-full font-poppins bg-black text-white px-5 py-2 rounded-2xl transition duration-300 border-black border-2;
+}
+
+button:hover{
+  @apply bg-white text-black border-solid;
+}
+
+.service_card{
+  @apply bg-white p-[16px] rounded-2xl max-w-[500px] text-left shrink-0 min-h-[250px] shadow-lg transition duration-300;
+}
+
+.service_card:hover {
+  @apply bg-black text-white;
+}
+
+.service_card span{
+  @apply text-4xl;
+}
+
+.service_card h3{
+  @apply mb-[8px] mt-[8px];
+}
+
+.input-box{
+  @apply w-full pb-5;
+}
+
+footer a:hover{
+  @apply font-medium underline;
 }
