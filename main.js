@@ -63,3 +63,29 @@ const activeLink = () =>{
 }
 
 window.addEventListener("scroll", activeLink)
+
+  function sendEmail() {
+    var params = {
+      user_name: document.getElementById('name').value,
+      user_contact: document.getElementById('contact_num').value,
+      user_email: document.getElementById('email').value,
+      subject: document.getElementById('subject').value,
+      message: document.getElementById('message').value
+    };
+    
+
+    const serviceID = "service_7qvf9me";
+    const templateID = "template_hxehphs";
+
+    emailjs.send(serviceID, templateID, params)
+    .then(res => {
+      document.getElementById("name").value = "";
+      document.getElementById("contact_num").value = "";
+      document.getElementById("email").value = "";
+      document.getElementById("subject").value = "";
+      document.getElementById("message").value = "";
+      alert("Your message was sent successfully!");
+    })
+    .catch(err => console.log(err));
+}
+    
