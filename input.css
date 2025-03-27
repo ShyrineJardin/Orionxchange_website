@@ -47,7 +47,7 @@
 }
 
 .card {
-  @apply bg-[#f3f3f3] p-4 rounded-xl max-w-sm text-left mx-2 shadow-md flex-shrink-0;
+  @apply bg-gradient-to-br from-sky-50 to-purple-50 p-4 rounded-xl max-w-sm text-left mx-2 shadow-md flex-shrink-0;
 }
 
 .card span {
@@ -62,8 +62,16 @@ body{
     @apply font-poppins;
 }
 
+.logo{
+  @apply bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent;
+}
+
+.headword{
+  @apply text-black;
+}
+
 h1{
-  @apply font-goldman font-medium md:text-7xl text-5xl;
+  @apply font-goldman font-medium md:text-7xl text-5xl bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent;
 }
 
 h2{
@@ -75,7 +83,7 @@ h3{
 }
 
 h4{
-  @apply font-goldman text-2xl;
+  @apply font-goldman text-2xl bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent;
 }
 
 .nav-link{
@@ -83,23 +91,23 @@ h4{
 }
 
 .nav-link:hover, .active{
-    @apply font-medium underline;
+    @apply font-semibold underline text-indigo-500;
 }
 
 .button{
-    @apply font-poppins bg-black text-white px-5 py-2 rounded-2xl transition duration-300 border-black border-2;
+    @apply font-poppins bg-indigo-400 text-white px-5 py-2 rounded-2xl transition duration-300 border-indigo-400 border-2;
 }
 
 .button:hover{
-    @apply bg-white text-black border-solid;
+    @apply bg-white text-indigo-500 border-solid;
 }
 
 button{
-  @apply w-full font-poppins bg-black text-white px-5 py-2 rounded-2xl transition duration-300 border-black border-2;
+  @apply w-full font-poppins bg-indigo-400 text-white px-5 py-2 rounded-2xl transition duration-300 border-indigo-400 border-2;
 }
 
 button:hover{
-  @apply bg-white text-black border-solid;
+  @apply bg-white text-indigo-500 border-solid;
 }
 
 .service_card{
@@ -107,7 +115,7 @@ button:hover{
 }
 
 .service_card:hover {
-  @apply bg-black text-white;
+  @apply bg-indigo-400 text-white;
 }
 
 .service_card span{

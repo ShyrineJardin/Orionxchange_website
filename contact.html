@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="assets/orionx.png" />
+  <link rel="apple-touch-icon" href="assets/orionx.png" />
+
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
     integrity="sha512-XcIsjKMcuVe0Ucj/xgIXQnytNwBttJbNjltBV18IOnru2lDPe9KRRyvCXw6Y5H415vbBLRm8+q6fmLUU7DfO6Q=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="/output.css" rel="stylesheet">
 
-  <link href="./output.css" rel="stylesheet">
   <title>Contact Us</title>
 </head>
 
@@ -22,29 +23,29 @@
     <div class="container mx-auto px-5 lg:px-20">
       <div class="flex items-center justify-between">
         <!-- Logo -->
-        <div>
+        <div class="flex flex-row justify-center items-center">
+            <img src="assets/orionx.png" alt="" class="w-10 h-auto">
           <a href="/#home">
-            <h4 class="cursor-pointer">OrionXchange</h4>
+            <h4 class="logo cursor-pointer">OrionXchange</h4>
           </a>
         </div>
 
-        <!-- Navigation Links (visible on desktop) -->
-        <div class="w-2/4 md:flex justify-center hidden">
-          <ul class="flex items-center gap-10">
-            <li><a href="/#home" class="nav-link active">HOME</a></li>
-            <li><a href="/#about" class="nav-link">ABOUT US</a></li>
-            <li><a href="/#services" class="nav-link">SERVICES</a></li>
-          </ul>
-        </div>
+       <!-- Navigation Links (visible on desktop) -->
+       <div class="w-2/4 md:flex justify-center hidden">
+        <ul class="flex items-center gap-10">
+          <li><a href="/#home" class="nav-link">HOME</a></li>
+          <li><a href="/#about" class="nav-link">ABOUT US</a></li>
+          <li><a href="/#services" class="nav-link">SERVICES</a></li>
+        </ul>
+      </div>
 
-        <!-- Contact Button -->
-        <div class="w-1/4 md:flex justify-end hidden">
-          <a href="contact.html" class="button flex items-center">
-            CONTACT US <i class="ri-arrow-right-up-line ml-2"></i>
-          </a>
+      <!-- Contact Button -->
+      <div class="w-1/4 md:flex justify-end hidden">
+        <a href="contact.html" class="button flex items-center">
+          CONTACT US <i class="ri-arrow-right-up-line ml-2"></i>
+        </a>
 
-        </div>
-
+      </div>
         <!-- Hamburger Menu (visible on mobile) -->
         <div class="text-3xl cursor-pointer md:hidden">
           <i class="ri-menu-4-line" id="hamburger"></i>
@@ -58,18 +59,22 @@
           <li><a href="/#about" class="nav-link">ABOUT US</a></li>
           <li><a href="/#services" class="nav-link">SERVICES</a></li>
         </ul>
+
         <div class="flex justify-center">
           <a href="contact.html" class="button flex items-center">
             CONTACT US <i class="ri-arrow-right-up-line ml-2"></i>
           </a>
         </div>
+
       </div>
     </div>
     <hr class="mt-2.5">
   </nav>
 
+
   <!--Contact-->
   <section class="container mt-35 mb-20">
+    <div>
     <div class="flex flex-col justify-center items-center mb-10">
       <p><i class="ri-checkbox-circle-fill text-green-500"></i> Managing your business smarter.</p>
       <h1 class="text-center">Drop us a message</h1>
@@ -78,70 +83,65 @@
     <form>
       <div class="input-box">
         <input id="name"
-          class="w-full bg-[#f3f3f3]/50 placeholder:text-slate-400 text-slate-700 text-sm border border-slate-200 rounded-md px-3 py-2 transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-300 shadow-sm focus:shadow"
+          class="w-full bg-gray-100 placeholder:text-slate-400 text-slate-700 text-sm border border-slate-200 rounded-md px-3 py-2 transition duration-300 ease focus:outline-none focus:border-purple-500 hover:border-purple-500 shadow-sm focus:shadow"
           placeholder="Name" />
       </div>
       <div class="input-box">
         <input id="contact_num" required type="number"
-          class="w-full bg-[#f3f3f3]/50 placeholder:text-slate-400 text-slate-700 text-sm border border-slate-200 rounded-md px-3 py-2 transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-300 shadow-sm focus:shadow"
+          class="w-full bg-gray-100 placeholder:text-slate-400 text-slate-700 text-sm border border-slate-200 rounded-md px-3 py-2 transition duration-300 ease focus:outline-none focus:border-purple-500 hover:border-purple-500 shadow-sm focus:shadow"
           placeholder="Contact Number" />
       </div>
       <div class="input-box">
         <input id="email" required type="email"
-          class="w-full bg-[#f3f3f3]/50 placeholder:text-slate-400 text-slate-700 text-sm border border-slate-200 rounded-md px-3 py-2 transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-300 shadow-sm focus:shadow"
+          class="w-full bg-gray-100 placeholder:text-slate-400 text-slate-700 text-sm border border-slate-200 rounded-md px-3 py-2 transition duration-300 ease focus:outline-none focus:border-purple-500 hover:border-purple-500 shadow-sm focus:shadow"
           placeholder="Email" />
       </div>
       <div class="input-box">
         <input id="subject" required type="text"
-          class="w-full bg-[#f3f3f3]/50 placeholder:text-slate-400 text-slate-700 text-sm border border-slate-200 rounded-md px-3 py-2 transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-300 shadow-sm focus:shadow"
+          class="w-full bg-gray-100 placeholder:text-slate-400 text-slate-700 text-sm border border-slate-200 rounded-md px-3 py-2 transition duration-300 ease focus:outline-none focus:border-purple-500 hover:border-purple-500 shadow-sm focus:shadow"
           placeholder="Subject" />
       </div>
       <div class="input-box">
         <textarea id="message" required
-          class="w-full h-[200px] bg-[#f3f3f3]/50 placeholder:text-slate-400 text-slate-700 text-sm border border-slate-200 rounded-md px-3 py-2 transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-300 shadow-sm focus:shadow"
+          class="w-full h-[200px] bg-gray-100 placeholder:text-slate-400 text-slate-700 text-sm border border-slate-200 rounded-md px-3 py-2 transition duration-300 ease focus:outline-none focus:border-purple-500 hover:border-purple-500 shadow-sm focus:shadow"
           placeholder="Message/Inquiry"></textarea>
       </div>
+
+          <button onclick="sendEmail()">Send</button>
     </form>
 
-    <button onclick="sendEmail()">Send</button>
   </section>
 
 
   <!--Footer-->
-  <footer class="bg-[#f3f3f3] pt-10">
-    <div class="grid sm:grid-cols-1 md:grid-cols-3 gap-5">
+  <footer class="bg-gradient-to-br from-sky-50 to-purple-50 pt-10 relative">
+    <div class="absolute top-0 left-0 right-0 h-8 bg-gradient-to-b from-white/50 to-transparent blur-sm"></div>
+    <div class="container grid sm:grid-cols-1 md:grid-cols-3 gap-5">
       <div class="flex flex-col items-center justify-center">
-        <h4>OrionXchange</h4>
+        <img src="assets/orionx.png" alt="" class="w-10 h-auto">
+        <h4 class="logo">OrionXchange</h4>
         <p class="text-center">Innovate. Transform. Elevate</p>
       </div>
-
+  
       <div class="flex flex-col gap-3 justify-center items-center">
-        <p class="font-bold">Company</p>
+        <p class="font-bold ">Company</p>
         <a href="/#home">Home</a>
         <a href="/#about">About us</a>
         <a href="/#services">Services</a>
       </div>
-
-      <div class="flex flex-col gap-3">
+  
+      <div class="flex flex-col gap-3 justify-center items-center">
         <p class="font-bold">Headquarters</p>
-        <p><i class="ri-map-pin-line"></i> room 122, Clark Welcome Center Office Suites, Berthaphil VIII Compound, SCTEX
-          Rd, Clark Freeport Zone, Angeles City, Pampanga, 2009, Philippines</p>
-
-        <!--<div class="flex justify-center gap-6 my-3">
-              <i class="ri-facebook-circle-line text-3xl mb-2 hover:scale-110"></i>
-              <i class="ri-instagram-line text-3xl mb-2 hover:scale-110"></i>
-              <i class="ri-twitter-x-line text-3xl hover:scale-110"></i>
-            </div> -->
+        <p class="whitespace-nowrap"><i class="ri-map-pin-line"></i> One Global Place, Fort Bonifacio, Taguig, NCR</p>
       </div>
     </div>
-
+  
     <hr class="mt-10">
     <div class="flex justify-center items-center text-center">
       <p class="pt-3">© 2025 OrionXchange Solutions Inc. All rights reserved.</p>
     </div>
-
   </footer>
-
+  
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
   </script>
   <script type="text/javascript">
